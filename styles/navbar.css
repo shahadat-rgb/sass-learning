@@ -1,0 +1,30 @@
+nav {
+  width: 50%;
+  height: 80px;
+  background-color: gray;
+  margin: 0 auto;
+}
+
+nav li {
+  float: left;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+nav li a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+  color: white;
+}
+
+nav li a:hover {
+  background-color: salmon;
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */

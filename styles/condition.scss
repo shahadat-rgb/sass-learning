@@ -1,0 +1,26 @@
+
+// @if @else condition & @mixin, @enclude & @extend.
+
+.image-style {
+    background-repeat: no-repeat;
+    background-size:50%;
+    padding: 300px;
+    background-position: center;
+}
+
+@mixin image ($img) {
+
+    @if $img == agency {
+        background-image: url(../agnecy.png);
+        @extend .image-style;
+    }
+    @else if $img == laptop {
+        background-image: url(../laptop.jpg);
+        @extend .image-style;
+    }
+    
+}
+
+ .all-image{
+         @include  image(laptop);
+ }

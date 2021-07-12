@@ -1,0 +1,22 @@
+//  how to use import using sass 
+
+@import "variable";
+@import "navbar";
+@import "heading";
+@import "condition";
+
+// partial declaration.
+
+p{
+  text-align: $text-center;
+  color: $text-white;
+  background-color: $background-pink;
+  margin: $text-margin;
+  padding: $text-padding;
+}
+
+
+
+
+
+

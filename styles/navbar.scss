@@ -1,0 +1,53 @@
+// how to use @mixin & @include with nesting css.
+
+@mixin navbar {
+    width:50%;
+    height: 80px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+@mixin listItem {
+
+    float: left;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 60px;
+    
+}
+
+@mixin ancor {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    transition: .4s; 
+    border-radius: 5px;
+    color: white;    
+}
+
+@mixin btn_hover ($bg-color,$color) {
+    background-color: $bg-color;
+    color: $color;
+}
+
+nav{
+    @include navbar;
+
+    li{  
+
+      @include listItem;
+    
+        a{ 
+              @include ancor;
+        }
+
+        a:hover{
+            
+              @include btn_hover( salmon,white );
+
+        }
+        
+    }
+    
+}

@@ -1,0 +1,11 @@
+.image-style, .all-image {
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding: 300px;
+  background-position: center;
+}
+
+.all-image {
+  background-image: url(../laptop.jpg);
+}
+/*# sourceMappingURL=condition.css.map */
